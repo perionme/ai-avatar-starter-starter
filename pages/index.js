@@ -40,7 +40,7 @@ const Home = () => {
       setRetry(0);
     }
 
-    const finalInput = input.replace(/perion man/gi, "perion");
+    const finalInput = input.replace(/perion/gi, "perion man");
 
     const response = await fetch("/api/generate", {
       method: "POST",
