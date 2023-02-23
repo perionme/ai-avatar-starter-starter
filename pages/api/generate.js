@@ -12,7 +12,7 @@ const bufferToBase64 = (buffer) => {
     const input = JSON.parse(req.body).input;
   
     const response = await fetch(
-      `https://api-inference.huggingface.co/models/buildspace/ai-avatar-generator`,
+      `https://api-inference.huggingface.co/models/perion/ai-avatar`,
       {
         headers: {
           Authorization: `Bearer ${process.env.HF_AUTH_KEY}`,
